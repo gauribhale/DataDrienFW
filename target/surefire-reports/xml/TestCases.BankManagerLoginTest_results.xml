@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="D:/AutomationCourse/DataDrivenFW"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.382">
+  <properties />
+  
+  
+            <testcase name="loginAsBankManager" time="2.382" classname="TestCases.BankManagerLoginTest" />
+      
+</testsuite>

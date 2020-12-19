@@ -23,6 +23,7 @@ public class AddCustomerTest extends TestBase {
         Assert.assertTrue(alert.getText().contains(alertText));
         alert.accept();
         Reporter.log("Add customer test executed");
+        Reporter.log("<br>");
 
     }
 

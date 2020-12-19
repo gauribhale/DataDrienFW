@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="D:/AutomationCourse/DataDrivenFW"
            tests="1"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="1.976">
+           time="0.793">
   <properties />
+            <testcase name="addCustomer" time="0.793" classname="TestCases.AddCustomerTest">
+                <failure type="java.lang.AssertionError"
+                  message="add customer test failed"
+              >
+<![CDATA[java.lang.AssertionError: add customer test failed
+  org.junit.Assert.fail(Assert.java:88)
+  TestCases.AddCustomerTest.addCustomer(AddCustomerTest.java:27)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1259)
+  org.testng.TestRunner.privateRun(TestRunner.java:764)
+  org.testng.TestRunner.run(TestRunner.java:585)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+  org.testng.TestNG.runSuites(TestNG.java:1069)
+  org.testng.TestNG.run(TestNG.java:1037)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="addCustomer" time="1.976" classname="TestCases.AddCustomerTest" />
-      
+  
 </testsuite>

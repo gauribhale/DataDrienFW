@@ -13,3 +13,6 @@
 [1129/134811.384:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
 [1129/134812.478:ERROR:crash_report_database_win.cc(609)] CreateDirectory C:\Users\dell\AppData\Local\Temp\scoped_dir12284_7989\Crashpad: The system cannot find the path specified. (0x3)
 [1129/140200.760:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1219/121627.602:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1219/143328.267:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1219/150441.755:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

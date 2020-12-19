@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.153 s <<< FAILURE! - in TestSuite
+addCustomer(TestCases.AddCustomerTest)  Time elapsed: 1.777 s  <<< FAILURE!
+java.lang.AssertionError: add customer test failed
+	at TestCases.AddCustomerTest.addCustomer(AddCustomerTest.java:27)
+
