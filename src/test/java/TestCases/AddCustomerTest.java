@@ -1,24 +1,34 @@
 package TestCases;
 
 import Base.TestBase;
+import Utilities.TestUtil;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Reporter;
+import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class AddCustomerTest extends TestBase {
 
-    @Test(dataProvider="getData")
-    public void addCustomer(String firstName, String lastName,String postCode,String alertText){
+    @Test(priority = 2,dataProviderClass= TestUtil.class,dataProvider = "dp")
+    public void addCustomerTest(String firstName, String lastName,String postCode,String alertText,String runmode){
 
-        driver.findElement(By.cssSelector(OR.getProperty("addCustBtn"))).click();
-        driver.findElement(By.cssSelector(OR.getProperty("firstName"))).sendKeys(firstName);
-        driver.findElement(By.cssSelector(OR.getProperty("lastName"))).sendKeys(lastName);
-        driver.findElement(By.cssSelector(OR.getProperty("postCode"))).sendKeys(postCode);
-        driver.findElement(By.cssSelector(OR.getProperty("addBtn"))).click();
+        //run modes
+        if(!TestUtil.isTestRunnable("AddCustomerTest",excel)) {
+            throw new SkipException("Skipping the test : " + "AddCustomerTest".toUpperCase());
+        }
+
+        if(!runmode.equalsIgnoreCase("Y")){
+            throw new SkipException("Skipping the test with values : "+firstName+", "+lastName);
+        }
+        click("addCustBtn");
+        type("firstName",firstName);
+        type("lastName",lastName);
+        type("postCode",postCode);
+        click("addBtn");
         Alert alert=wait.until(ExpectedConditions.alertIsPresent());
         Assert.assertTrue(alert.getText().contains(alertText));
         alert.accept();
@@ -27,23 +37,5 @@ public class AddCustomerTest extends TestBase {
 
     }
 
-    @DataProvider
-    public Object[][] getData(){
-        String sheetName="AddCustomerTest";
-        int rowNum = excel.getRowCount(sheetName);
-        int colNum = excel.getColumnCount(sheetName);
 
-        Object[][] data = new Object[rowNum - 1][colNum];
-
-        for (int rows = 2; rows <= rowNum; rows++) {
-            for (int cols = 0; cols < colNum; cols++) {
-
-                data[rows - 2][cols] = excel.getCellData(sheetName, cols, rows);
-
-            }
-
-        }
-
-        return data;
-    }
 }

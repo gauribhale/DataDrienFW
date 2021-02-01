@@ -10,7 +10,7 @@
     <classes>
       <class name="TestCases.AddCustomerTest">
         <methods>
-          <include name="addCustomer" invocation-numbers="0"/>
+          <include name="addCustomerTest" invocation-numbers="3"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

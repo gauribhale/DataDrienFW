@@ -129,5 +129,13 @@
             </configuration>
         </plugin>
     </plugins>
+    <testResources>
+        <testResource>
+            <directory>src/test/resources/Properties</directory>
+            <includes>
+                <include>log4j.properties</include>
+            </includes>
+        </testResource>
+    </testResources>
 </build>
 </project>

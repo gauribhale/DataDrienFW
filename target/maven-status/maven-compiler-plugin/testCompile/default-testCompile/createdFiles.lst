@@ -1,7 +1,9 @@
 Listeners\CustomListeners.class
-Utilities\ExcelReader.class
-Utilities\TestUtil.class
 Rough\TestTimeStamp.class
+Utilities\ExcelReader.class
 Base\TestBase.class
 TestCases\BankManagerLoginTest.class
+Utilities\ExtentManager.class
+Utilities\TestUtil.class
 TestCases\AddCustomerTest.class
+TestCases\OpenAccountTest.class
