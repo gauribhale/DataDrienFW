@@ -12,6 +12,7 @@
         <classes>
             <class name="TestCases.BankManagerLoginTest"></class>
             <class name="TestCases.AddCustomerTest"></class>
+            <class name="TestCases.OpenAccountTest"></class>
 
         </classes>
     </test>

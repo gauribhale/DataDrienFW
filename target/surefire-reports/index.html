@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-All_Test_Suite">
-              <span class="suite-name border-failed">All Test Suite</span>
+              <span class="suite-name border-skipped">All Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">6 methods,  1 skipped,  5 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
-                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods skipped suite-All_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods skipped suite-All_Test_Suite"> (show)</a> <!-- show-methods skipped suite-All_Test_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-All_Test_Suite">
+                    <div class="method-list-content skipped suite-All_Test_Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="TestCases.AddCustomerTest" hash-for-method="addCustomer(Raman, Aruna, 431005.0, Customer added successfully)">addCustomer(Raman, Aruna, 431005.0, Customer added successfully)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="TestCases.AddCustomerTest" hash-for-method="addCustomerTest(Gautam, Sharma, 431005.0, Customer added successfully, N)">addCustomerTest(Gautam, Sharma, 431005.0, Customer added successfully, N)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
+                    </div> <!-- method-list-content skipped suite-All_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,7 +118,27 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="TestCases.BankManagerLoginTest" hash-for-method="loginAsBankManager">loginAsBankManager</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="TestCases.BankManagerLoginTest" hash-for-method="BankManagerLoginTest">BankManagerLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="TestCases.AddCustomerTest" hash-for-method="addCustomerTest(Rohit , Gupta, 431005.0, Customer added successfully, Y)">addCustomerTest(Rohit , Gupta, 431005.0, Customer added successfully, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="TestCases.AddCustomerTest" hash-for-method="addCustomerTest(Raman, Aruna, 431005.0, Customer added successfully, Y)">addCustomerTest(Raman, Aruna, 431005.0, Customer added successfully, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="TestCases.AddCustomerTest" hash-for-method="addCustomerTest(Rahul, Arora, 431005.0, Customer added successfully, Y)">addCustomerTest(Rahul, Arora, 431005.0, Customer added successfully, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Test_Suite" title="TestCases.OpenAccountTest" hash-for-method="openAccountTest(Raman Aruna, Rupee)">openAccountTest(Raman Aruna, Rupee)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-All_Test_Suite -->
@@ -133,21 +153,20 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
-          <div class="suite-All_Test_Suite-class-failed">
+          <div class="suite-All_Test_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">TestCases.AddCustomerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addCustomer(Raman, Aruna, 431005.0, Customer added successfully)">
-                  </a> <!-- addCustomer(Raman, Aruna, 431005.0, Customer added successfully) -->
-                  <span class="method-name">addCustomer</span>
-                  <span class="parameters">(Raman, Aruna, 431005.0, Customer added successfully)</span>
-                  <div class="stack-trace">java.lang.AssertionError: add customer test failed
-	at org.junit.Assert.fail(Assert.java:88)
-	at TestCases.AddCustomerTest.addCustomer(AddCustomerTest.java:27)
+                  <a name="addCustomerTest(Gautam, Sharma, 431005.0, Customer added successfully, N)">
+                  </a> <!-- addCustomerTest(Gautam, Sharma, 431005.0, Customer added successfully, N) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(Gautam, Sharma, 431005.0, Customer added successfully, N)</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test with values : Gautam, Sharma
+	at TestCases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -185,7 +204,7 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-failed -->
+          </div> <!-- suite-All_Test_Suite-class-skipped -->
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -194,9 +213,57 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginAsBankManager">
-                  </a> <!-- loginAsBankManager -->
-                  <span class="method-name">loginAsBankManager</span>
+                  <a name="BankManagerLoginTest">
+                  </a> <!-- BankManagerLoginTest -->
+                  <span class="method-name">BankManagerLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.OpenAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openAccountTest(Raman Aruna, Rupee)">
+                  </a> <!-- openAccountTest(Raman Aruna, Rupee) -->
+                  <span class="method-name">openAccountTest</span>
+                  <span class="parameters">(Raman Aruna, Rupee)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCases.AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(Rohit , Gupta, 431005.0, Customer added successfully, Y)">
+                  </a> <!-- addCustomerTest(Rohit , Gupta, 431005.0, Customer added successfully, Y) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(Rohit , Gupta, 431005.0, Customer added successfully, Y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(Raman, Aruna, 431005.0, Customer added successfully, Y)">
+                  </a> <!-- addCustomerTest(Raman, Aruna, 431005.0, Customer added successfully, Y) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(Raman, Aruna, 431005.0, Customer added successfully, Y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest(Rahul, Arora, 431005.0, Customer added successfully, Y)">
+                  </a> <!-- addCustomerTest(Rahul, Arora, 431005.0, Customer added successfully, Y) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">(Rahul, Arora, 431005.0, Customer added successfully, Y)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,6 +287,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;TestCases.BankManagerLoginTest&quot;/&gt;
       &lt;class name=&quot;TestCases.AddCustomerTest&quot;/&gt;
+      &lt;class name=&quot;TestCases.OpenAccountTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- D:/AutomationCourse/DataDrivenFW --&gt;
 &lt;/suite&gt; &lt;!-- All Test Suite --&gt;
@@ -233,7 +301,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">D:/AutomationCourse/DataDrivenFW (2 classes)</span>
+                <span class="test-name">D:/AutomationCourse/DataDrivenFW (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -259,15 +327,31 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginAsBankManager')
-data.setCell(0, 2, 'TestCases.BankManagerLoginTest')
-data.setCell(0, 3, 2382);
+data.setCell(0, 1, 'openAccountTest')
+data.setCell(0, 2, 'TestCases.OpenAccountTest')
+data.setCell(0, 3, 1582);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addCustomer')
+data.setCell(1, 1, 'addCustomerTest')
 data.setCell(1, 2, 'TestCases.AddCustomerTest')
-data.setCell(1, 3, 1763);
+data.setCell(1, 3, 1225);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addCustomerTest')
+data.setCell(2, 2, 'TestCases.AddCustomerTest')
+data.setCell(2, 3, 619);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addCustomerTest')
+data.setCell(3, 2, 'TestCases.AddCustomerTest')
+data.setCell(3, 3, 544);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'BankManagerLoginTest')
+data.setCell(4, 2, 'TestCases.BankManagerLoginTest')
+data.setCell(4, 3, 344);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addCustomerTest')
+data.setCell(5, 2, 'TestCases.AddCustomerTest')
+data.setCell(5, 3, 1);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
@@ -284,33 +368,58 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">loginAsBankManager</span>
+              <span class="reporter-method-name">openAccountTest(Raman Aruna, Rupee)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open account test executed</span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addCustomerTest(Rohit , Gupta, 431005.0, Customer added successfully, Y)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Add customer test executed</span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">BankManagerLoginTest</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Login as bank manager test executed</span>
                 <span class="reporter-method-output"><br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">addCustomer(Raman, Aruna, 431005.0, Customer added successfully)</span>
+              <span class="reporter-method-name">addCustomerTest(Raman, Aruna, 431005.0, Customer added successfully, Y)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Add customer test executed</span>
                 <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output">click to view screenshot</span>
-                <span class="reporter-method-output"><a target="_blank" href=Sat_Dec_19_15_26_52_IST_2020.jpg>Screenshot</a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addCustomerTest(Rahul, Arora, 431005.0, Customer added successfully, Y)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Add customer test executed</span>
                 <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><br></span>
-                <span class="reporter-method-output"><a target="_blank" href=Sat_Dec_19_15_26_52_IST_2020.jpg><img src=Sat_Dec_19_15_26_52_IST_2020.jpg height=200 width=400></img></a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">TestCases.AddCustomerTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCases.OpenAccountTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
@@ -332,24 +441,41 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">loginAsBankManager</span>
-                <span class="method-start">14431 ms</span>
+                <span class="method-name">BankManagerLoginTest</span>
+                <span class="method-start">76287 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.AddCustomerTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">addCustomer(Raman, Aruna, 431005.0, Customer added successfully)</span>
-                <span class="method-start">16875 ms</span>
+                <span class="method-name">addCustomerTest(Raman, Aruna, 431005.0, Customer added successfully, Y)</span>
+                <span class="method-start">76905 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest(Rahul, Arora, 431005.0, Customer added successfully, Y)</span>
+                <span class="method-start">78252 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest(Rohit , Gupta, 431005.0, Customer added successfully, Y)</span>
+                <span class="method-start">78971 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest(Gautam, Sharma, 431005.0, Customer added successfully, N)</span>
+                <span class="method-start">79589 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.OpenAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openAccountTest(Raman Aruna, Rupee)</span>
+                <span class="method-start">79739 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.BankManagerLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19259 ms</span>
+                <span class="method-start">81493 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
